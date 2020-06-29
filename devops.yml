@@ -10,7 +10,6 @@ services:
         container_name: jenkins-docker
         volumes:
             - /opt/jenkins/jenkins-data:/var/jenkins_home
-          #  - /opt/jenkins/jenkins-docker-certs:/certs/client:ro
         networks: 
             devops:
                 aliases:
@@ -28,7 +27,6 @@ services:
         container_name: jenkins
         volumes:
             - /opt/jenkins/jenkins-data:/var/jenkins_home
-         #   - /opt/jenkins/jenkins-docker-certs:/certs/client:ro
         networks: 
             - devops
     gitlab:
