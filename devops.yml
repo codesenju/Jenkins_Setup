@@ -22,7 +22,7 @@ services:
         privileged: true
         user: root
         ports:
-            - 8080:8080
+            - 8280:8080
             - 50000:50000
         container_name: jenkins
         volumes:
@@ -35,7 +35,7 @@ services:
         hostname: '$G_HOSTNAME'
         user: root
         ports:
-            - 8280:80
+            - 8080:80
             - 443:443
             - 44:22
         container_name: gitlab
